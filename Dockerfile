@@ -5,7 +5,7 @@ WORKDIR /app
 RUN python3 -m venv venv
 
 # Install the dependencies
-RUN apk add --no-cache g++ git libenet-dev
+RUN apk add --no-cache g++ git enet-dev
 
 # Install piqueserver
 COPY .git ./.git
